@@ -8,7 +8,8 @@ namespace Password
         {
             var data = new DataLoader("input.txt").DataList;
             var verifier = new PasswordVerifier(data);
-            Console.WriteLine(verifier.CountValidPasswords());
+            Console.WriteLine("Part1: " + verifier.CountValidPasswords1());
+            Console.WriteLine("Part2: " + verifier.CountValidPasswords2());
         }
     }
 }
