@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/sven/Git/Advent2020/Advent2020/day1/ReportRepair/ReportRepair.csproj": {}
+  },
+  "projects": {
+    "/home/sven/Git/Advent2020/Advent2020/day1/ReportRepair/ReportRepair.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sven/Git/Advent2020/Advent2020/day1/ReportRepair/ReportRepair.csproj",
+        "projectName": "ReportRepair",
+        "projectPath": "/home/sven/Git/Advent2020/Advent2020/day1/ReportRepair/ReportRepair.csproj",
+        "packagesPath": "/home/sven/.nuget/packages/",
+        "outputPath": "/home/sven/Git/Advent2020/Advent2020/day1/ReportRepair/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/sven/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/sven/dotnet/sdk/3.1.404/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
