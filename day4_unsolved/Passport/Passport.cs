@@ -34,27 +34,27 @@ namespace Passport{
         }
 
         public bool IsValid(){
-            if (byr == null)
+            if (string.IsNullOrEmpty(byr))
             {
                 return false;
             }
-            if (iyr == null)
+            if (string.IsNullOrEmpty(iyr))
             {
                 return false;
             }
-            if (eyr == null)
+            if (string.IsNullOrEmpty(eyr))
             {
                 return false;
             }
-            if (hgt == null)
+            if (string.IsNullOrEmpty(hgt))
             {
                 return false;
             }
-            if (ecl == null)
+            if (string.IsNullOrEmpty(ecl))
             {
                 return false;
             }
-            if (pid == null)
+            if (string.IsNullOrEmpty(pid))
             {
                 return false;
             }
