@@ -7,10 +7,13 @@ namespace Questions
         static void Main(string[] args)
         {
             var loader = new DataLoader("input.txt");
+            var analyzer = new GroupAnalyzer(loader.Groups);
             foreach(var group in loader.Groups)
                 group.CombineAnswers();
-            var analyzer = new GroupAnalyzer(loader.Groups);
-            Console.WriteLine("Part1: " + analyzer.SumUpAllAnswerCounts());
+            Console.WriteLine("Part1: " + analyzer.SumUpAllCombinedAnswerCounts());
+            foreach(var group in loader.Groups)
+                group.FilterOverlappingAnswers();
+            Console.WriteLine("Part2: " + analyzer.SumUpAllOverlappingAnswerCounts());
         }
     }
 }

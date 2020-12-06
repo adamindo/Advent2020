@@ -9,11 +9,20 @@ namespace Questions{
             this.groups = groups;
         }
 
-        internal int SumUpAllAnswerCounts(){
+        internal int SumUpAllCombinedAnswerCounts(){
             var sum = 0;
             foreach(var group in groups)
             {
-                sum += group.Answers.Count;
+                sum += group.CombinedAnswers.Count;
+            }
+            return sum;
+        }
+
+        internal int SumUpAllOverlappingAnswerCounts(){
+            var sum = 0;
+            foreach(var group in groups)
+            {
+                sum += group.OverlappingAnswers.Count;
             }
             return sum;
         }
