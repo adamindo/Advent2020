@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Encrypted
 {
@@ -38,6 +39,28 @@ namespace Encrypted
                 position++;
             }
             Console.WriteLine("Part1: " + error);
+
+            var inputCopy = new List<ulong>(dataInput);
+            while (true){
+                ulong sum = 0;
+                var area = new List<ulong>();
+                foreach(var number in inputCopy){
+                    if (sum < error){
+                        area.Add(number);
+                        sum += number;
+                    }
+                    else
+                        break;
+                }
+                if (sum > error){
+                    inputCopy.Remove(inputCopy.First());
+                    continue;
+                }
+                inputCopy = area;
+                break;
+            }
+
+            Console.WriteLine("Part2: " + (inputCopy.Max() + inputCopy.Min()));
         }
     }
 }
